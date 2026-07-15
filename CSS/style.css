@@ -14,10 +14,11 @@ body {
     border: none;
     padding: 0;
     cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 1.3s ease, opacity 0.3s ease;
+    animation: breathe 4s ease-in-out infinite;
 }
 
-.image-button:hover {
+.logo:hover {
     opacity: 0.9;
     transform: scale(1.1);
 }
@@ -28,6 +29,23 @@ body {
     display: block;
 }
 
+.gosthface {
+    --gosthface-size: 50vw;
+    width: var(--gosthface-size);
+    height: auto;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    left: -2vw;
+    bottom: 0px;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.gosthface:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
 .rose-image {
     --rose-size: 30vw;
     width: var(--rose-size);
@@ -36,10 +54,10 @@ body {
     object-fit: cover;
     border-radius: 12px;
     position: absolute;
-    right: -15px;
+    right: -25px;
     bottom: 20px;
     transform: rotate(-30deg);
-    animation: floatRose 2.4s ease-in-out infinite;
+    animation: floatRose 4s ease-in-out infinite;
 }
 
 @keyframes floatRose {
@@ -51,3 +69,12 @@ body {
     }
 }
 
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
