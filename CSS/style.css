@@ -28,7 +28,7 @@ body {
     height: auto;
     display: block;
 }
-
+ 
 .gosthface {
     --gosthface-size: 50vw;
     width: var(--gosthface-size);
@@ -65,7 +65,7 @@ body {
         bottom: 20px;
     }
     50% {
-        bottom: 38px;
+        bottom: 37px;
     }
 }
 
